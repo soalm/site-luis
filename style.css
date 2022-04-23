@@ -11,9 +11,15 @@ body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     min-width: 100vw;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(0, 0, 0);
+    transition: .3s all ease;
+   
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
@@ -25,6 +31,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    margin-left: 20px;
+    margin-top: 10px;
     
     
 }
@@ -40,30 +48,91 @@ body {
 }
 
 
+
+
 #body-container {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 35px);
+    margin-bottom: 10px;
 }
 
 
 .left {
-    border-top: 2px solid white;
-    height: calc(100vh - 40px);
-    background-image: url(./assets/img/1.jpg);
+    
+    height: calc(100vh - 35px);
+    background-image: linear-gradient(to top, transparent 80%, rgb(0, 0, 0) 100%), url(./assets/img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    /*/-webkit-mask-image: linear-gradient(to bottom, transparent 0.5%, black 90%);/*/
+    transition: 1s all ease;
+    
+    
+}
+
+.left:hover {
+    
+    height: calc(100vh - 35px);
+    background-image: linear-gradient(to top, transparent 80%, rgb(0, 0, 0) 100%), url(./assets/img/1.jpg);
     background-size: cover;
     background-position: center;
     transition: 1s all ease;
     
 }
 
-.left:hover {
-    border-top: 2px solid white;
-    height: calc(100vh - 40px);
-    background-image: url(./assets/img/1.jpg);
+
+.slide {
+    height: 100vh;
+    width: 100vw;
+}
+
+.glide__slides {
+    height: 50vh;
+
+}
+
+
+.glide1 {
+    margin-top: 10px;
+}
+
+.pdsampaio {
+    
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/20bdfb140824273.6248ad9d4df65.jpg);
     background-size: cover;
     background-position: center;
-    transition: 1s all ease;
-    
+
 }
+
+.bikini {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e28ee4140888085.624a0ac27b274.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hallowen {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/367182131095059.618db0603699c.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.aviao {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/80e50a123621449.60f1d4701e562.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.praia {
+
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/fc7f19112275217.60117cb0d4dcf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crianca {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/0d700b133574425.61c0e078cddfc.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 
@@ -72,18 +141,23 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 30px);
+    height: 100vh;
     width: 100vw;
     
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(45,53,124,1) 100%);    
-    border-top: 2px solid white;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/6eee23140824273.6248ad9b910c6.jpg);
+    background-position: left;
+    background-size: cover;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-bottom: 1px solid white;
     
     
 }
 
+.photo {
+    display: flex;
+    justify-content: center;
+}
 
 
 .photo-container {
@@ -185,10 +259,11 @@ footer {
     display: flex;
     justify-content: center;
     height: 30px;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(0, 0, 0);
     color: white;
     justify-content: center;
     align-items: center;
+  
 
     
 }
